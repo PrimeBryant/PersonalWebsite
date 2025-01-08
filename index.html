@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿武的个人主页</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-text">AW</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">首页</a>
+                <a href="#about">关于</a>
+                <a href="#works">作品</a>
+                <a href="#contact">联系</a>
+                <button class="theme-toggle" title="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 欢迎区域 -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-name">Hello, I'm A Wu</span>
+                    <span class="hero-subtitle">打工人</span>
+                </h1>
+            </div>
+            <div class="scroll-down">
+                <span>向下滚动</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- 作品展示 -->
+        <section class="works" id="works">
+            <div class="section-header">
+                <h2>生活碎片</h2>
+                <p>记录生活中的美好时刻</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <!-- 轮播图片将通过 JS 动态添加 -->
+                    </div>
+                    <button class="carousel-btn prev" aria-label="上一张">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" aria-label="下一张">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section class="about" id="about">
+            <div class="section-header">
+                <h2>关于我</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://picsum.photos/300" alt="个人照片">
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        你好，我是一名打工人。专注于探索生活的美好，致力于实现工作与生活的平衡。
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3>生活态度</h3>
+                            <div class="skills">
+                                <span class="skill">乐观向上</span>
+                                <span class="skill">积极进取</span>
+                                <span class="skill">热爱生活</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <h3>工作经历</h3>
+                            <p>资深打工人 / 2020-至今</p>
+                            <p>初级打工人 / 2018-2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <h2>联系我</h2>
+                <p>让我们开始合作</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>邮箱</h3>
+                        <p>814891663@qq.com</p>
+                        <a href="mailto:814891663@qq.com" class="contact-link">发送邮件</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <h3>微信</h3>
+                        <p>扫描二维码添加</p>
+                        <a href="#" class="contact-link wechat-link">查看二维码</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>@username</p>
+                        <a href="#" class="contact-link" target="_blank">访问主页</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 将 AI 助手部分移到 about 部分后面 -->
+        <section class="ai-assistant" id="ai-assistant">
+            <div class="section-header">
+                <h2>AI 助手</h2>
+                <p>与我的 AI 助手对话</p>
+            </div>
+            <div class="ai-chat-container">
+                <div class="chat-window">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <i class="fas fa-robot"></i>
+                            <span>AI 助手</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages">
+                        <div class="message ai">
+                            <div class="message-content">
+                                <p>你好！我是阿武的 AI 助手，很高兴为您服务。您可以询问关于我的生活态度、工作经历或其他任何问题。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <textarea 
+                            class="chat-input" 
+                            placeholder="输入您的问题..." 
+                            rows="1"
+                            maxlength="500"
+                        ></textarea>
+                        <button class="send-message" title="发送">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚部分 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">AW</a>
+                    <p class="footer-desc">打工人，追求生活的美好。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>导航</h3>
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#about">关于</a></li>
+                            <li><a href="#works">作品</a></li>
+                            <li><a href="#contact">联系</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>联系方式</h3>
+                        <ul>
+                            <li><a href="mailto:814891663@qq.com">Email</a></li>
+                            <li><a href="#" class="wechat-link">微信</a></li>
+                            <li><a href="#" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 阿武. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 微信二维码弹窗 -->
+    <div class="modal" id="wechatModal">
+        <div class="modal-content">
+            <img src="./images/wechat-qr.jpg" alt="阿武的微信二维码" class="qr-code">
+            <button class="modal-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html> 
